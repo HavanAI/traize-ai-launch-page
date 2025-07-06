@@ -95,8 +95,8 @@ export const Approach = (props) => {
           <div className="col-lg-4 col-md-4 col-sm-6">
             <div className="approach-item">
               <i className="fa fa-rocket"></i>
-              <h4>Research & Development</h4>
-              <p>Currently validating models and infrastructure with selected pilot partners in active development phase.</p>
+              <h4>Strategic Optimization</h4>
+              <p>Data-driven recommendations for team formation and resource allocation.</p>
             </div>
           </div>
         </div>

@@ -109,7 +109,6 @@ class Media {
     textColor,
     borderRadius = 0,
     font,
-    details = "",
   }) {
     this.extra = 0;
     this.geometry = geometry;
@@ -121,19 +120,14 @@ class Media {
     this.scene = scene;
     this.screen = screen;
     this.text = text;
-    this.details = details;
     this.viewport = viewport;
     this.bend = bend;
     this.textColor = textColor;
     this.borderRadius = borderRadius;
     this.font = font;
-    this.isFlipped = false;
-    this.flipProgress = 0;
-    this.targetFlip = 0;
     this.createShader();
     this.createMesh();
     this.createTitle();
-    this.createDetailsTexture();
     this.onResize();
   }
   createShader() {
