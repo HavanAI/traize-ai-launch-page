@@ -44,8 +44,8 @@ export const Contact = (props) => {
               <div className="section-title">
                 <h2>Get In Touch</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  Interested in collaborating, partnering, or learning more about our research?
+                  We'd love to hear from potential collaborators and partners.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>

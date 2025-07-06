@@ -208,7 +208,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(../img/intro-bg-network.jpg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -448,6 +448,52 @@ header .intro-text {
 }
 #team .team-img {
   width: 240px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+}
+#team .team-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  filter: grayscale(0%);
+}
+/* Approach Section */
+#approach {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+#approach .section-title {
+  margin-bottom: 60px;
+}
+#approach .approach-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+#approach .approach-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+#approach .approach-item i {
+  font-size: 48px;
+  color: #5ca9fb;
+  margin-bottom: 20px;
+}
+#approach .approach-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+#approach .approach-item p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
 }
 #team .thumbnail {
   background: transparent;
