@@ -44,22 +44,26 @@
     {
       "img": "img/team/rapha.jpeg",
       "name": "Raphael Sauer",
-      "job": "Business Development & Co-Founder"
+      "job": "Business Development & Co-Founder",
+      "description": "Raphael drives business strategy and partnerships at Traize. With extensive experience in enterprise sales and strategic partnerships, he focuses on building relationships with pilot partners and scaling our go-to-market approach. His background in business development helps translate our research into real-world enterprise solutions."
     },
     {
       "img": "img/team/lukas.jpeg",
       "name": "Lukas Bierling",
-      "job": "Research & Engineering & Co-Founder"
+      "job": "Research & Engineering & Co-Founder",
+      "description": "Lukas leads our research initiatives and core engineering architecture. With deep expertise in systems thinking and AI research, he develops the foundational algorithms and infrastructure that power Traize's knowledge mapping capabilities. His work bridges cutting-edge research with scalable engineering solutions."
     },
     {
       "img": "img/team/adri.jpeg",
       "name": "Adrian Henkel",
-      "job": "Engineering & Co-Founder"
+      "job": "Engineering & Co-Founder",
+      "description": "Adrian architects and builds the technical infrastructure that makes Traize's vision reality. With strong expertise in distributed systems and data engineering, he ensures our platform can scale to handle enterprise-level knowledge graphs and real-time analytics across large organizations."
     },
     {
       "img": "img/team/theo.jpeg",
       "name": "Theo Rabe",
-      "job": "Product Design & Co-Founder"
+      "job": "Product Design & Co-Founder",
+      "description": "Theo shapes the user experience and product design philosophy at Traize. With a focus on making complex knowledge systems intuitive and accessible, he designs interfaces that help users navigate organizational expertise effortlessly. His work ensures our powerful backend capabilities translate into delightful user experiences."
     }
   ],
   "Contact": {
