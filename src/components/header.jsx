@@ -4,10 +4,11 @@ import DotGrid from "./DotGrid";
 import Aurora from "./Aurora";
 import Beams from "./Beams";
 import Orb from "./Orb";
+import Waves from "./Waves";
 
 export const Header = (props) => {
-  // Switch between background types: 'squares', 'dots', 'aurora', 'beams', or 'orb'
-  const backgroundType = 'orb';
+  // Switch between background types: 'squares', 'dots', 'aurora', 'beams', 'orb', or 'waves'
+  const backgroundType = 'waves';
 
   const renderBackground = () => {
     if (backgroundType === 'dots') {
@@ -15,7 +16,7 @@ export const Header = (props) => {
         <DotGrid
           dotSize={8}
           gap={40}
-          baseColor="rgba(255, 255, 255, 0.2)"
+          baseColor="rgba(255, 255, 255, 0.9)"
           activeColor="rgba(92, 169, 251, 0.8)"
           proximity={120}
           speedTrigger={80}
@@ -27,7 +28,7 @@ export const Header = (props) => {
     } else if (backgroundType === 'aurora') {
       return (
         <Aurora
-          colorStops={["#1e3c72", "#5ca9fb", "#6372ff"]}
+          colorStops={["#f2f5ff", "#d9e8fc", "#b3d1f7"]}
           amplitude={1.2}
           blend={0.7}
           speed={0.8}
@@ -55,6 +56,22 @@ export const Header = (props) => {
           hoverIntensity={0.2}
           rotateOnHover={true}
           forceHoverState={false}
+        />
+      );
+    } else if (backgroundType === 'waves') {
+      return (
+        <Waves
+          lineColor="rgba(211, 220, 230, 0.94)"
+          backgroundColor="transparent"
+          waveSpeedX={0.0125}
+          waveSpeedY={0.005}
+          waveAmpX={32}
+          waveAmpY={16}
+          xGap={10}
+          yGap={32}
+          friction={0.925}
+          tension={0.005}
+          maxCursorMove={100}
         />
       );
     } else {
