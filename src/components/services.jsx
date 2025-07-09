@@ -3,12 +3,11 @@ import React from "react";
 export const Services = (props) => {
   return (
     <div id="services" className="text-center">
-      <div className="container">
+      <div className="container" style={{"background": "none"}}>
         <div className="section-title">
-          <h2>Our Approach</h2>
+          <h2>Our Vision</h2>
           <p>
-            We are developing core technologies and methodologies for enterprise
-            knowledge systems in active research and development.
+            We envision a future where organizations effortlessly connect their collective intelligence – linking every talent, project, and skill – to become truly intelligent, adaptive, and limitless
           </p>
         </div>
         <div className="row">
@@ -18,7 +17,7 @@ export const Services = (props) => {
                   {" "}
                   <i className={d.icon}></i>
                   <div className="service-desc">
-                    <h3>{d.name}</h3>
+                    <h3 className="service-title">{d.name}</h3>
                     <p>{d.text}</p>
                   </div>
                 </div>
