@@ -110,7 +110,7 @@ export const Header = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
-                <div className="top-title">Get to know your Company</div>
+                <div className="top-title">Intelligent Solutions for Enterprise Knowledge</div>
                 <h1>
                   {props.data ? props.data.title : "Loading"}
                   <span></span>
@@ -124,10 +124,10 @@ export const Header = (props) => {
                     Get in touch
                   </a>
                   <a
-                    href="#features"
+                    href="#vision"
                     className="btn-explore page-scroll"
                   >
-                    Explore Features
+                    Our Vision
                   </a>
                 </div>
               </div>

@@ -1,23 +1,24 @@
 {
   "Header": {
     "title": "Traize",
-    "paragraph": "Building an intelligent operating system for enterprise knowledge. We help organizations identify expertise, analyze skill gaps, and dynamically assemble teams based on real-world experience."
+    "paragraph": "We are developing an intelligent operating system for enterprise knowledge, connecting talent, projects, and expertise to unlock your organization's full potential."
   },
   "About": {
-    "paragraph": "Traize is building an intelligent operating system for enterprise knowledge. Our platform helps organizations identify internal expertise, analyze skill gaps, and dynamically assemble teams based on real-world experience. We make knowledge across departments visible, navigable, and actionable, enabling smarter collaboration, targeted development, and scalable learning systems.",
+    "paragraph": "At Traize, we are building the future of enterprise knowledge. Our platform empowers organizations to understand their internal capabilities, optimize resource allocation, and foster a culture of continuous learning and collaboration. We transform complex internal data into actionable intelligence, making expertise visible and accessible like never before.",
     "Why": [
-      "Knowledge mapping and discovery",
-      "Skill and capability analytics",
-      "Team formation based on contextual experience",
-      "Internal learning and mobility infrastructure"
+      "Talent Deployment Optimization",
+      "Strategic Skill Development",
+      "Workforce Agility & Resilience"
     ],
     "Why2": [
-      "Graph-based knowledge architecture",
-      "Real-world experience analysis",
-      "Dynamic team assembly",
-      "Scalable learning systems"
+      "AI-Powered Knowledge Discovery",
+      "Actionable Insights & Dashboards",
+      "Transparent & Trustworthy AI"
     ],
     "img": "img/about-analytics.jpg"
+  },
+  "Vision": {
+    "statement": "We envision a future where organizations effortlessly connect their collective intelligence – linking every talent, project, and skill – to become truly intelligent, adaptive, and limitless."
   },
   "Approach": {
     "paragraph": "Discover how Traize transforms enterprise knowledge through intelligent systems and data-driven insights."
@@ -68,8 +69,8 @@
   ],
   "Contact": {
     "address": "Munich, Germany",
-    "phone": "Contact via email",
-    "email": "info@traize.com",
+    "phone": "+49 15233896998",
+    "email": "info@traize.ai",
     "facebook": "#",
     "twitter": "#",
     "youtube": "#"
