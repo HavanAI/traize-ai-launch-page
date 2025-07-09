@@ -8,7 +8,7 @@ import Waves from "./Waves";
 
 export const Header = (props) => {
   // Switch between background types: 'squares', 'dots', 'aurora', 'beams', 'orb', or 'waves'
-  const backgroundType = 'orb';
+  const backgroundType = 'waves';
 
   useEffect(() => {
     const handleScroll = () => {
