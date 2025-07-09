@@ -718,6 +718,298 @@ header .intro-text > * {
     font-size: 36px;
   }
 }
+
+/* About Vision Section - Similar to Vision Section */
+#about-vision {
+  padding: 100px 0;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+#about-vision .section-title {
+  margin-bottom: 60px;
+}
+
+.about-vision-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Network visualization background for About */
+.about-network {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.03;
+}
+
+/* About statement styling */
+.about-statement {
+  background: #fff;
+  border-radius: 15px;
+  padding: 50px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 5px;
+  position: relative;
+  border: 1px solid #f1f3f4;
+}
+
+.about-icon {
+  margin-bottom: 25px;
+}
+
+.about-icon i {
+  font-size: 48px;
+  color: #6372ff;
+}
+
+.about-text {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 400;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+/* About services styling */
+.about-services {
+  margin-top: 10px;
+}
+
+.about-service-group {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1f3f4;
+  height: 28%;
+  margin-bottom: 20px;
+}
+
+.about-service-group h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.about-service-group h4::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  height: 3px;
+  width: 40px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.service-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-service-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: rgba(99, 114, 255, 0.02);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(99, 114, 255, 0.05);
+}
+
+.about-service-item:hover {
+  background: rgba(99, 114, 255, 0.05);
+  border-color: rgba(99, 114, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.service-icon {
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.service-icon i {
+  font-size: 16px;
+  color: #6372ff;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.about-service-item span {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Flat service section styling - no elevation */
+.about-service-section {
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.about-service-section h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.about-service-section h4::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  height: 3px;
+  width: 40px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-service-item-flat {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.about-service-item-flat:hover {
+  transform: translateX(5px);
+}
+
+.about-service-item-flat .service-icon {
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.about-service-item-flat .service-icon i {
+  font-size: 16px;
+  color: #6372ff;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.about-service-item-flat span {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* About Vision responsive design */
+@media (max-width: 768px) {
+  #about-vision {
+    padding: 60px 0;
+  }
+
+  .about-statement {
+    padding: 35px 25px;
+    margin-bottom: 35px;
+  }
+
+  .about-text {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .about-icon i {
+    font-size: 40px;
+  }
+
+  .about-services {
+    margin-top: 40px;
+  }
+
+  .about-service-group {
+    padding: 25px 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-service-group h4 {
+    font-size: 16px;
+  }
+
+  .about-service-item span {
+    font-size: 13px;
+  }
+
+  /* Hide network animation on mobile for cleaner look */
+  .about-network {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-statement {
+    padding: 25px 20px;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .about-icon i {
+    font-size: 36px;
+  }
+
+  .about-service-group {
+    padding: 20px 15px;
+  }
+
+  .about-service-item {
+    padding: 10px 12px;
+  }
+
+  .service-icon i {
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .about-service-section {
+    padding: 15px 0;
+  }
+
+  .about-service-section h4 {
+    font-size: 16px;
+  }
+
+  .about-service-item-flat {
+    padding: 6px 0;
+  }
+
+  .about-service-item-flat span {
+    font-size: 13px;
+  }
+
+  .about-service-item-flat .service-icon i {
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+}
 /* Services Section */
 #services {
   padding: 100px 0;
