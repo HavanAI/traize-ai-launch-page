@@ -118,7 +118,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: #496dc8;
   content: "";
   transition: width 0.2s;
 }
@@ -139,7 +139,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  background: #496dc8 !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -184,11 +184,11 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: #496dc8;
   height: 4px;
-  width: 300%;
+  width: 30%;
   bottom: 0;
-  left: -60%;
+  left: 30%;
 }
 .section-title p {
   font-size: 18px;
@@ -256,7 +256,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: #3c72ce;
   position: relative;
   overflow: hidden;
 }
@@ -282,7 +282,7 @@ a:focus,
 }
 .intro h1 span {
   font-weight: 300;
-  color: #5ca9fb;
+  color: #496dc8;
 }
 .intro p {
   color: rgba(255, 255, 255, 0.9);
@@ -414,7 +414,7 @@ header .intro-text > * {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: #3c72ce;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
@@ -433,11 +433,11 @@ header .intro-text > * {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: #496dc8;
   height: 4px;
-  width: 240%;
+  width: 60px;
   bottom: 0;
-  left: -20%;
+  left: 0;
 }
 #about .about-text li {
   margin-bottom: 6px;
@@ -448,7 +448,7 @@ header .intro-text > * {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #5ca9fb;
+  color: #496dc8;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
@@ -497,7 +497,7 @@ header .intro-text > * {
   position: absolute;
   width: 8px;
   height: 8px;
-  background: #6372ff;
+  background: #3c72ce;
   border-radius: 50%;
   animation: pulse 4s ease-in-out infinite;
 }
@@ -512,7 +512,7 @@ header .intro-text > * {
 .network-connection {
   position: absolute;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #6372ff, transparent);
+  background: linear-gradient(90deg, transparent, #3c72ce, transparent);
   animation: flow 6s ease-in-out infinite;
 }
 
@@ -583,7 +583,7 @@ header .intro-text > * {
 
 .vision-icon i {
   font-size: 48px;
-  color: #6372ff;
+  color: #496dc8;
 }
 
 .vision-text {
@@ -625,7 +625,7 @@ header .intro-text > * {
 
 .pillar-icon i {
   font-size: 28px;
-  color: #6372ff;
+  color: #496dc8;
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -756,7 +756,7 @@ header .intro-text > * {
   margin-bottom: 30px;
   font-size: 14px;
   font-weight: 600;
-  color: #6372ff;
+  color: #496dc8;
   transition: all 0.3s ease;
 }
 
@@ -780,7 +780,7 @@ header .intro-text > * {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #6372ff 0%, #5ca9fb 100%);
+  background: #496dc8;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -808,7 +808,7 @@ header .intro-text > * {
 .stat-number {
   font-size: 32px;
   font-weight: 800;
-  color: #6372ff;
+  color: #496dc8;
   font-family: "Raleway", sans-serif;
   margin-bottom: 5px;
 }
@@ -841,7 +841,7 @@ header .intro-text > * {
   position: absolute;
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #6372ff 0%, #5ca9fb 100%);
+  background: #3c72ce;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -893,30 +893,30 @@ header .intro-text > * {
 
 /* Capabilities Section */
 .capabilities-section {
-  padding: 80px 0 120px;
+  padding: 60px 0 80px;
   background: #fff;
   position: relative;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .section-header h3 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: "Raleway", sans-serif;
 }
 
 .section-header p {
-  font-size: 18px;
+  font-size: 16px;
   color: #666;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .capabilities-grid {
@@ -942,7 +942,7 @@ header .intro-text > * {
 .category-icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #6372ff 0%, #5ca9fb 100%);
+  background: #3c72ce;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -972,8 +972,8 @@ header .intro-text > * {
 
 .capability-card {
   background: #fff;
-  border-radius: 16px;
-  padding: 30px;
+  border-radius: 12px;
+  padding: 20px;
   border: 1px solid #f0f0f0;
   transition: all 0.4s ease;
   cursor: pointer;
@@ -1003,14 +1003,14 @@ header .intro-text > * {
 }
 
 .card-icon {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, #6372ff 0%, #5ca9fb 100%);
-  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  background: #3c72ce;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   transition: all 0.3s ease;
 }
 
@@ -1019,22 +1019,22 @@ header .intro-text > * {
 }
 
 .card-icon i {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
 }
 
 .card-content h5 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-family: "Raleway", sans-serif;
 }
 
 .card-content p {
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0;
 }
 
@@ -1053,7 +1053,7 @@ header .intro-text > * {
 
 .card-arrow i {
   font-size: 16px;
-  color: #6372ff;
+  color: #496dc8;
 }
 
 /* Responsive Design for Modern About Section */
@@ -1074,14 +1074,11 @@ header .intro-text > * {
   }
 
   .floating-elements {
-    width: 300px;
-    height: 300px;
+    display: none;
   }
 
   .float-element {
-    width: 60px;
-    height: 60px;
-    font-size: 18px;
+    display: none;
   }
 }
 
@@ -1198,15 +1195,11 @@ header .intro-text > * {
   }
 
   .floating-elements {
-    width: 200px;
-    height: 200px;
+    display: none;
   }
 
   .float-element {
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
-    border-radius: 10px;
+    display: none;
   }
 }
 
@@ -1247,7 +1240,7 @@ header .intro-text > * {
 
 .about-icon i {
   font-size: 48px;
-  color: #6372ff;
+  color: #496dc8;
 }
 
 .about-text {
@@ -1288,7 +1281,7 @@ header .intro-text > * {
 .about-service-group h4::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: #496dc8;
   height: 3px;
   width: 40px;
   bottom: 0;
@@ -1325,7 +1318,7 @@ header .intro-text > * {
 
 .service-icon i {
   font-size: 16px;
-  color: #6372ff;
+  color: #496dc8;
   width: 24px;
   height: 24px;
   line-height: 24px;
@@ -1359,7 +1352,7 @@ header .intro-text > * {
 .about-service-section h4::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: #496dc8;
   height: 3px;
   width: 40px;
   bottom: 0;
@@ -1385,7 +1378,7 @@ header .intro-text > * {
 
 .about-service-item-flat .service-icon i {
   font-size: 16px;
-  color: #6372ff;
+  color: #496dc8;
   width: 24px;
   height: 24px;
   line-height: 24px;
@@ -1493,59 +1486,239 @@ header .intro-text > * {
     line-height: 20px;
   }
 }
-/* Services Section */
-#services {
+/* Vision Section */
+.vision-section {
   padding: 100px 0;
   background: #fff;
   color: #333;
-}
-#services .service-desc {
-  margin: 10px 10px 20px;
-}
-#services h2 {
-  color: #333;
-}
-#services .section-title h2::after {
-  position: absolute;
-  content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  height: 4px;
-  width: 300%;
-  bottom: 0;
-  margin-left: -30px;
-  left: -20%;
+  position: relative;
+  overflow: hidden;
 }
 
-#services .service-desc h3::after {
-  position: absolute;
-  content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  height: 4px;
-  width: 60px;
-  bottom: 0;
-  margin-left: -30px;
-  left: 50%;
+.vision-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-#services i.fa {
-  font-size: 42px;
-  width: 120px;
-  height: 120px;
-  padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  border-radius: 50%;
-  color: #fff;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+
+.vision-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  min-height: 600px;
 }
-#services h3 {
+
+.vision-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.vision-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #3c72ce;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
   font-weight: 500;
-  padding: 5px 0;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.vision-badge i {
+  font-size: 16px;
+}
+
+.vision-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 30px;
   color: #333;
 }
-#services p {
-  color: #666;
+
+.vision-title .highlight {
+  background: linear-gradient(45deg, #3c72ce 0%, #496dc8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-#services .service-desc {
+
+.vision-title .highlight-secondary {
+  background: linear-gradient(45deg, #3c72ce 0%, #496dc8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.vision-description {
+  font-size: 20px;
+  line-height: 1.5;
   margin-bottom: 40px;
+  color: #666;
+  font-weight: 400;
+}
+
+.vision-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vision-pillars-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.vision-pillar {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.vision-pillar:hover {
+  background: #fff;
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(60, 114, 206, 0.1);
+}
+
+.pillar-icon {
+  width: 60px;
+  height: 60px;
+  background: #3c72ce;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pillar-icon i {
+  font-size: 28px;
+  color: #fff;
+}
+
+.pillar-content h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.pillar-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+.vision-visual {
+  flex: 1;
+  position: relative;
+  height: 500px;
+}
+
+.floating-elements-vision {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.float-element-vision {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #3c72ce;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(60, 114, 206, 0.3);
+  animation: float-vision 6s ease-in-out infinite;
+}
+
+.float-element-vision i {
+  font-size: 32px;
+  color: #fff;
+}
+
+.element-vision-1 {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.element-vision-2 {
+  top: 30%;
+  right: 10%;
+  animation-delay: 1s;
+}
+
+.element-vision-3 {
+  top: 60%;
+  left: 10%;
+  animation-delay: 2s;
+}
+
+.element-vision-4 {
+  bottom: 20%;
+  right: 25%;
+  animation-delay: 3s;
+}
+
+.element-vision-5 {
+  top: 45%;
+  left: 45%;
+  animation-delay: 4s;
+}
+
+@keyframes float-vision {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vision-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .vision-title {
+    font-size: 2.5rem;
+  }
+
+  .vision-pillars-right {
+    max-width: 100%;
+  }
+
+  .floating-elements-vision {
+    display: none;
+  }
+
+  .float-element-vision {
+    display: none;
+  }
 }
 /* Portfolio Section */
 #portfolio {
@@ -1641,6 +1814,16 @@ header .intro-text > * {
   padding: 100px 0;
 }
 
+#team .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: #496dc8;
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 0;
+}
+
 /* Team Card Container */
 .team-card {
   perspective: 1000px;
@@ -1682,7 +1865,7 @@ header .intro-text > * {
 }
 
 .team-card-back {
-  background: linear-gradient(135deg, #6372ff 0%, #5ca9fb 100%);
+  background: #3c72ce;
   color: white;
   transform: rotateY(180deg);
 }
@@ -1794,7 +1977,7 @@ header .intro-text > * {
 }
 #approach .approach-item i {
   font-size: 48px;
-  color: #5ca9fb;
+  color: #496dc8;
   margin-bottom: 20px;
 }
 #approach .approach-item h4 {
@@ -1827,13 +2010,13 @@ header .intro-text > * {
   padding-bottom: 15px;
 }
 #contact .section-title h2::after {
-  position: absolute;
+  position: left;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: #496dc8;
   height: 4px;
-  width: 300%;
+  width: 60px;
   bottom: 0;
-  left: -20%;
+  left: 0;
 }
 #contact h3 {
   color: #333;
@@ -1851,7 +2034,7 @@ header .intro-text > * {
 }
 #contact .btn-custom {
   margin: 30px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: #3c72ce;
   border: 2px solid transparent;
   color: #fff;
 }

@@ -16,17 +16,17 @@ export const AboutVision = (props) => {
               <span className="gradient-text"> Think & Learn</span>
             </h2>
             <p className="hero-description">
-              {props.data ? props.data.paragraph : "At Traize, we're building the future of enterprise knowledge. Our intelligent platform empowers organizations to understand their internal capabilities, optimize resource allocation, and foster a culture of continuous learning and collaboration."}
+              {props.data ? props.data.paragraph : "Traize is crafting the future of enterprise knowledge. Our platform provides organizations with the intelligence to understand internal capabilities, optimize resources, and cultivate continuous learning. We turn complex data into actionable expertise, making your hidden strengths visible and accessible."}
             </p>
             <div className="hero-stats">
               <div className="stat-item">
-                <div className="stat-number">10x</div>
-                <div className="stat-label">Faster Insights</div>
+                <div className="stat-number">360°</div>
+                <div className="stat-label">Solution</div>
               </div>
-              <div className="stat-item">
-                <div className="stat-number">95%</div>
-                <div className="stat-label">Accuracy Rate</div>
-              </div>
+               <div className="stat-item">
+    <div className="stat-number">100%</div>
+    <div className="stat-label">Knowledge Visibility</div>
+  </div>
               <div className="stat-item">
                 <div className="stat-number">24/7</div>
                 <div className="stat-label">AI Monitoring</div>
@@ -55,7 +55,7 @@ export const AboutVision = (props) => {
         <div className="capabilities-section">
           <div className="section-header">
             <h3>What Makes Us Different</h3>
-            <p>Discover the core capabilities and cutting-edge technology that power intelligent organizations</p>
+            <p>Core capabilities and technology solutions for intelligent organizations</p>
           </div>
 
           {/* Core Capabilities */}
@@ -73,11 +73,11 @@ export const AboutVision = (props) => {
                   "Strategic Skill Development",
                   "Workforce Agility & Resilience"
                 ]).map((item, i) => {
-                  const icons = ["fa-users-cog", "fa-graduation-cap", "fa-shield-alt"];
+                  const icons = ["fa-users", "fa-graduation-cap", "fa-shield"];
                   const descriptions = [
-                    "Intelligently match talent to projects with AI-powered optimization",
-                    "Build future-ready skills through personalized development pathways",
-                    "Create adaptive teams that thrive in changing environments"
+                    "AI-powered talent matching and project optimization",
+                    "Personalized skill development pathways",
+                    "Adaptive teams for changing environments"
                   ];
                   return (
                     <div key={`capability-${i}`} className="capability-card">
@@ -101,7 +101,7 @@ export const AboutVision = (props) => {
             <div className="capability-category">
               <div className="category-header">
                 <div className="category-icon">
-                  <i className="fa fa-microchip"></i>
+                  <i className="fa fa-laptop"></i>
                 </div>
                 <h4>Technology Solutions</h4>
               </div>
@@ -111,11 +111,11 @@ export const AboutVision = (props) => {
                   "Actionable Insights & Dashboards",
                   "Transparent & Trustworthy AI"
                 ]).map((item, i) => {
-                  const icons = ["fa-brain", "fa-chart-pie", "fa-eye"];
+                  const icons = ["fa-search", "fa-line-chart", "fa-eye"];
                   const descriptions = [
-                    "Uncover hidden patterns and insights from your organizational data",
-                    "Transform complex data into clear, actionable business intelligence",
-                    "Build trust with explainable AI and transparent decision-making"
+                    "Discover hidden patterns in organizational data",
+                    "Clear, actionable business intelligence",
+                    "Explainable AI and transparent decisions"
                   ];
                   return (
                     <div key={`solution-${i}`} className="capability-card">

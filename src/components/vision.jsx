@@ -44,7 +44,7 @@ export const Vision = (props) => {
                       <i className="fa fa-share-alt"></i>
                     </div>
                     <h4>Connected Intelligence</h4>
-                    <p>Every piece of knowledge, every skill, and every insight seamlessly linked across your organization.</p>
+                    <p>Seamlessly map organizational knowledge and expertise relationships at scale for unparalleled clarity.</p>
                   </div>
                 </div>
                 <div className="col-md-4">
@@ -52,7 +52,7 @@ export const Vision = (props) => {
                     <div className="pillar-icon">
                       <i className="fa fa-refresh"></i>
                     </div>
-                    <h4>Adaptive Organizations</h4>
+                    <h4>Adaptive Organization</h4>
                     <p>Companies that learn, evolve, and respond to change with the agility of their collective expertise.</p>
                   </div>
                 </div>

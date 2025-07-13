@@ -4,7 +4,7 @@
     "paragraph": "We are developing an intelligent operating system for enterprise knowledge, connecting talent, projects, and expertise to unlock your organization's full potential."
   },
   "About": {
-    "paragraph": "At Traize, we are building the future of enterprise knowledge. Our platform empowers organizations to understand their internal capabilities, optimize resource allocation, and foster a culture of continuous learning and collaboration. We transform complex internal data into actionable intelligence, making expertise visible and accessible like never before.",
+    "paragraph": "Traize is crafting the future of enterprise knowledge. Our platform provides organizations with the intelligence to understand internal capabilities, optimize resources, and cultivate continuous learning. We turn complex data into actionable expertise, making your hidden strengths visible and accessible.",
     "Why": [
       "Talent Deployment Optimization",
       "Strategic Skill Development",
@@ -27,17 +27,17 @@
     {
       "icon": "fa fa-share-alt",
       "name": "Connected Intelligence",
-      "text": "Graph-based systems that map organizational knowledge and expertise relationships at scale."
+      "text": "Seamlessly map organizational knowledge and expertise relationships at scale for unparalleled clarity."
     },
     {
       "icon": "fa fa-refresh",
       "name": "Adaptive Organizations",
-      "text": "Companies that learn, evolve, and respond to change with the agility of their collective expertise."
+      "text": "Empower companies to learn, evolve, and respond to change with the collective agility of their workforce"
     },
     {
       "icon": "fa fa-rocket",
       "name": "Limitless Potential",
-      "text": "Organizations that transcend traditional boundaries to achieve unprecedented innovation and growth"
+      "text": "Unleash unprecedented innovation and growth by transcending traditional organizational boundaries."
     }
   ],
 
