@@ -43,28 +43,25 @@
 
   "Team": [
     {
-      "img": "img/team/rapha.jpeg",
+      "img": "img/team/raphabw.jpeg",
       "name": "Raphael Sauer",
       "job": "Business Development & Co-Founder",
-      "description": "Raphael drives business strategy and partnerships at Traize. With extensive experience in enterprise sales and strategic partnerships, he focuses on building relationships with pilot partners and scaling our go-to-market approach. His background in business development helps translate our research into real-world enterprise solutions."
-    },
+      "description": "Raphael leads Traize's business strategy and partnerships. Drawing on a background in consulting and an MSc in Organization & Innovation from Copenhagen, he expertly bridges our advanced research with market needs. He focuses on strategic relationships with key partners and scaling our go-to-market initiatives, ensuring Traize's solutions deliver value to enterprises."  },
     {
       "img": "img/team/lukas.jpeg",
       "name": "Lukas Bierling",
-      "job": "Research & Engineering & Co-Founder",
-      "description": "Lukas leads our research initiatives and core engineering architecture. With deep expertise in systems thinking and AI research, he develops the foundational algorithms and infrastructure that power Traize's knowledge mapping capabilities. His work bridges cutting-edge research with scalable engineering solutions."
-    },
+      "job": "Research & Co-Founder",
+      "description": "Lukas leads our research initiatives and core engineering architecture. Currently, a MSc AI  student in Amsterdam he focuses on information retrieval and autonomous agents. With over four years of experience in Machine Learning Engineering and Research, he develops the foundational algorithms and infrastructure that power Traize's knowledge mapping capabilities. "   },
     {
       "img": "img/team/adri.jpeg",
       "name": "Adrian Henkel",
-      "job": "Engineering & Co-Founder",
-      "description": "Adrian architects and builds the technical infrastructure that makes Traize's vision reality. With strong expertise in distributed systems and data engineering, he ensures our platform can scale to handle enterprise-level knowledge graphs and real-time analytics across large organizations."
-    },
+      "job": "LLM Engineering & Co-Founder",
+      "description": "Adrian, with an MSc in Bioinformatics from TUM, is the architect of Traize's technical infrastructure. He is our lead LLM Engineer, implementing all relevant generative components and agentic AI workflows.  His expertise ensures the seamless integration and high performance of LLMs, transforming complex enterprise knowledge into intelligent insights at scale."  },
     {
-      "img": "img/team/theo.jpeg",
+      "img": "img/team/theobw.jpeg",
       "name": "Theo Rabe",
       "job": "Product Design & Co-Founder",
-      "description": "Theo shapes the user experience and product design philosophy at Traize. With a focus on making complex knowledge systems intuitive and accessible, he designs interfaces that help users navigate organizational expertise effortlessly. His work ensures our powerful backend capabilities translate into delightful user experiences."
+      "description": "Theo is Traize's creative mind, shaping our user experience and product design. Drawing on his experience in the creative field, he specializes in transforming complex systems into intuitive interfaces. His work ensures our powerful backend capabilities translate into truly delightful and effortless user experiences."
     }
   ],
   "Contact": {

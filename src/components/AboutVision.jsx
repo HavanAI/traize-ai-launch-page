@@ -27,6 +27,7 @@ export const AboutVision = (props) => {
     <div className="stat-number">100%</div>
     <div className="stat-label">Knowledge Visibility</div>
   </div>
+  
               <div className="stat-item">
                 <div className="stat-number">24/7</div>
                 <div className="stat-label">AI Monitoring</div>
@@ -51,91 +52,60 @@ export const AboutVision = (props) => {
           </div>
         </div>
 
-        {/* Capabilities & Solutions Cards */}
-        <div className="capabilities-section">
-          <div className="section-header">
-            <h3>What Makes Us Different</h3>
-            <p>Core capabilities and technology solutions for intelligent organizations</p>
-          </div>
-
-          {/* Core Capabilities */}
-          <div className="capabilities-grid">
-            <div className="capability-category">
-              <div className="category-header">
-                <div className="category-icon">
-                  <i className="fa fa-cogs"></i>
+        {/* What Makes Us Different Section 
+        <div className="differentiators-section">
+          <div className="differentiators-container">
+            <div className="differentiators-content">
+              <div className="differentiators-text">
+                <div className="differentiators-badge">
+                  <i className="fa fa-star"></i>
+                  <span>What Makes Us Different</span>
                 </div>
-                <h4>Core Capabilities</h4>
+                <h2 className="differentiators-title">
+                  BEYOND TRADITIONAL DATA
+                  <span className="highlight"> WE BUILD</span>
+                  <span className="highlight-secondary"> INTELLIGENT CONNECTIONS</span>
+                </h2>
+                <p className="differentiators-description">
+                  Beyond traditional data, we build intelligent connections that empower your enterprise.
+                </p>
               </div>
-              <div className="cards-grid">
-                {(props.data && props.data.Why ? props.data.Why : [
-                  "Talent Deployment Optimization",
-                  "Strategic Skill Development",
-                  "Workforce Agility & Resilience"
-                ]).map((item, i) => {
-                  const icons = ["fa-users", "fa-graduation-cap", "fa-shield"];
-                  const descriptions = [
-                    "AI-powered talent matching and project optimization",
-                    "Personalized skill development pathways",
-                    "Adaptive teams for changing environments"
-                  ];
-                  return (
-                    <div key={`capability-${i}`} className="capability-card">
-                      <div className="card-icon">
-                        <i className={`fa ${icons[i]}`}></i>
-                      </div>
-                      <div className="card-content">
-                        <h5>{item}</h5>
-                        <p>{descriptions[i]}</p>
-                      </div>
-                      <div className="card-arrow">
-                        <i className="fa fa-arrow-right"></i>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
 
-            {/* Technology Solutions */}
-            <div className="capability-category">
-              <div className="category-header">
-                <div className="category-icon">
-                  <i className="fa fa-laptop"></i>
+              <div className="differentiators-pillars-right">
+                <div className="differentiator-pillar">
+                  <div className="pillar-icon">
+                    <i className="fa fa-sitemap"></i>
+                  </div>
+                  <div className="pillar-content">
+                    <h4>Semantic Intelligence Engine</h4>
+                    <p>Our unique AI-powered graph technology maps your organization's talent, projects, and skills with unprecedented precision, uncovering hidden relationships and expertise at scale.</p>
+                  </div>
                 </div>
-                <h4>Technology Solutions</h4>
-              </div>
-              <div className="cards-grid">
-                {(props.data && props.data.Why2 ? props.data.Why2 : [
-                  "AI-Powered Knowledge Discovery",
-                  "Actionable Insights & Dashboards",
-                  "Transparent & Trustworthy AI"
-                ]).map((item, i) => {
-                  const icons = ["fa-search", "fa-line-chart", "fa-eye"];
-                  const descriptions = [
-                    "Discover hidden patterns in organizational data",
-                    "Clear, actionable business intelligence",
-                    "Explainable AI and transparent decisions"
-                  ];
-                  return (
-                    <div key={`solution-${i}`} className="capability-card">
-                      <div className="card-icon">
-                        <i className={`fa ${icons[i]}`}></i>
-                      </div>
-                      <div className="card-content">
-                        <h5>{item}</h5>
-                        <p>{descriptions[i]}</p>
-                      </div>
-                      <div className="card-arrow">
-                        <i className="fa fa-arrow-right"></i>
-                      </div>
-                    </div>
-                  );
-                })}
+
+                <div className="differentiator-pillar">
+                  <div className="pillar-icon">
+                    <i className="fa fa-lightbulb-o"></i>
+                  </div>
+                  <div className="pillar-content">
+                    <h4>Actionable & Explainable Insights</h4>
+                    <p>Move beyond raw data. Our intuitive dashboards deliver clear, actionable intelligence, coupled with transparent AI explanations for truly trustworthy, data-driven decisions.</p>
+                  </div>
+                </div>
+
+                <div className="differentiator-pillar">
+                  <div className="pillar-icon">
+                    <i className="fa fa-rocket"></i>
+                  </div>
+                  <div className="pillar-content">
+                    <h4>Holistic Talent & Strategic Optimization</h4>
+                    <p>Gain a 360° view to instantly match talent to projects, identify strategic skill gaps, and cultivate an adaptive workforce, driving unparalleled efficiency and future readiness.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        */}
       </div>
     </div>
   );

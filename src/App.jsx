@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
-import { Features } from "./components/features";
-import { About } from "./components/about";
 import { AboutVision } from "./components/AboutVision";
-import { Vision } from "./components/vision";
-import { Approach } from "./components/approach";
 import { Services } from "./components/services";
 
 import { Team } from "./components/Team";
@@ -17,6 +13,9 @@ import "./App.css";
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
+  offset: 70, // Account for fixed navbar height
+  updateURL: false, // Don't update the URL hash
+  easing: 'easeInOutCubic'
 });
 
 const App = () => {
@@ -26,7 +25,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div id="page-top">
       <Navigation />
       <Header data={landingPageData.Header} />
       {/*<Features data={landingPageData.Features} />*/}

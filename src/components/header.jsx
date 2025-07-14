@@ -124,7 +124,7 @@ export const Header = (props) => {
                     Get in touch
                   </a>
                   <a
-                    href="#vision"
+                    href="#services"
                     className="btn-explore page-scroll"
                   >
                     Our Vision
