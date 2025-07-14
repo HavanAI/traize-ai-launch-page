@@ -2,9 +2,9 @@ import React from "react";
 
 export const Team = (props) => {
   return (
-    <div id="team" className="text-center">
+    <div id="team">
       <div className="container">
-        <div className="col-md-8 col-md-offset-2 section-title">
+        <div className="section-title">
           <h2>Founding Team</h2>
           <p>
             Our team combines expertise in systems thinking, product development,

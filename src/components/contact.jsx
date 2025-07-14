@@ -7,33 +7,52 @@ const initialState = {
   email: "",
   message: "",
 };
+
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', or null
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
+    // Clear any previous submit status when user starts typing
+    if (submitStatus) {
+      setSubmitStatus(null);
+    }
   };
+
   const clearState = () => setState({ ...initialState });
-  
-  
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    setIsLoading(true);
+    setSubmitStatus(null);
+
+    // EmailJS configuration - replace these with your actual values
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
+
+    // Check if EmailJS is properly configured
+    if (serviceId === "YOUR_SERVICE_ID" || templateId === "YOUR_TEMPLATE_ID" || publicKey === "YOUR_PUBLIC_KEY") {
+      console.warn("EmailJS not configured. Please set up your EmailJS credentials.");
+      setSubmitStatus('error');
+      setIsLoading(false);
+      return;
+    }
+
+    try {
+      const result = await emailjs.sendForm(serviceId, templateId, e.target, publicKey);
+      console.log("Email sent successfully:", result.text);
+      setSubmitStatus('success');
+      clearState();
+    } catch (error) {
+      console.error("Failed to send email:", error.text || error);
+      setSubmitStatus('error');
+    } finally {
+      setIsLoading(false);
+    }
   };
   return (
     <div>
@@ -103,11 +122,39 @@ export const Contact = (props) => {
                     </div>
                   </div>
                   <div className="text-center">
-                    <button type="submit" className="btn btn-custom modern-submit">
-                      <i className="fa fa-paper-plane"></i>
-                      Send Message
+                    <button
+                      type="submit"
+                      className="btn btn-custom modern-submit"
+                      disabled={isLoading}
+                    >
+                      {isLoading ? (
+                        <>
+                          <i className="fa fa-spinner fa-spin"></i>
+                          Sending...
+                        </>
+                      ) : (
+                        <>
+                          <i className="fa fa-paper-plane"></i>
+                          Send Message
+                        </>
+                      )}
                     </button>
                   </div>
+
+                  {/* Status Messages */}
+                  {submitStatus === 'success' && (
+                    <div className="alert alert-success text-center" style={{ marginTop: '20px' }}>
+                      <i className="fa fa-check-circle"></i>
+                      <strong> Success!</strong> Your message has been sent successfully. We'll get back to you soon!
+                    </div>
+                  )}
+
+                  {submitStatus === 'error' && (
+                    <div className="alert alert-danger text-center" style={{ marginTop: '20px' }}>
+                      <i className="fa fa-exclamation-circle"></i>
+                      <strong> Error!</strong> There was a problem sending your message. Please try again or contact us directly.
+                    </div>
+                  )}
                 </form>
               </div>
             </div>
