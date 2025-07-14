@@ -328,43 +328,7 @@ header .intro-text > * {
   pointer-events: auto;
 }
 
-/* Floating Elements */
-.intro::before,
-.intro::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  animation: float 6s ease-in-out infinite;
-  pointer-events: none;
-}
 
-.intro::before {
-  width: 200px;
-  height: 200px;
-  top: 20%;
-  right: 10%;
-  animation-delay: -2s;
-}
-
-.intro::after {
-  width: 150px;
-  height: 150px;
-  bottom: 20%;
-  left: 15%;
-  animation-delay: -4s;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-    opacity: 0.3;
-  }
-  50% {
-    transform: translateY(-20px) rotate(180deg);
-    opacity: 0.1;
-  }
-}
 
 /* Responsive Typography */
 @media (max-width: 768px) {
@@ -378,6 +342,8 @@ header .intro-text > * {
     font-size: 20px;
     margin-bottom: 60px;
     padding: 0 20px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
   }
 
   header .intro-text {
@@ -399,6 +365,9 @@ header .intro-text > * {
 
   .intro p {
     font-size: 18px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    padding: 0 20px;
   }
 }
 /* Features Section */
@@ -834,47 +803,88 @@ header .intro-text > * {
 
 .floating-elements {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
 }
 
 .float-element {
   position: absolute;
   width: 80px;
-  height: 80px;
+  height: auto;
+  min-height: 80px;
   background: #3c72ce;
   border-radius: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 24px;
   box-shadow: 0 10px 30px rgba(99, 114, 255, 0.3);
   animation: float 6s ease-in-out infinite;
+  padding: 12px 8px;
+  text-align: center;
 }
 
 .float-element.element-1 {
-  top: 20%;
-  left: 10%;
-  animation-delay: 0s;
+  top: 15%;
+  left: 25%;
+  animation-delay: 0.3s;
 }
 
 .float-element.element-2 {
-  top: 10%;
-  right: 20%;
-  animation-delay: 1.5s;
+  top: 1%;
+  left: 70%;
+  animation-delay: 0.1s;
 }
 
 .float-element.element-3 {
-  bottom: 30%;
-  right: 10%;
-  animation-delay: 3s;
+  bottom: -10%;
+  left: 25%;
+  animation-delay: 0.7s;
 }
 
 .float-element.element-4 {
-  bottom: 20%;
-  left: 20%;
-  animation-delay: 4.5s;
+  top: -4%;
+  left: 70%;
+  animation-delay: 0.2s;
+}
+
+.float-element i {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.float-element p {
+  font-size: 9px;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.float-element-clickable {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.float-element-clickable:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 15px 40px rgba(60, 114, 206, 0.4);
+}
+
+.float-expand-hint {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 10px;
+}
+
+.float-element-clickable:hover .float-expand-hint {
+  opacity: 1;
 }
 
 @keyframes float {

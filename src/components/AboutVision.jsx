@@ -1,6 +1,54 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export const AboutVision = (props) => {
+  const [selectedElement, setSelectedElement] = useState(null);
+
+  // Detailed content for each floating element
+  const elementDetails = {
+    "Innovation": {
+      title: "Innovation at the Core",
+      content: "We believe innovation thrives when knowledge flows freely. Our platform transforms how organizations discover and leverage their internal expertise, creating an environment where breakthrough ideas emerge naturally from connected intelligence and collaborative insights."
+    },
+    "Architecture": {
+      title: "Intelligent Architecture",
+      content: "Our semantic intelligence engine builds a living map of your organization's knowledge architecture. By understanding the deep relationships between people, projects, and skills, we create a foundation for intelligent decision-making and strategic resource allocation."
+    },
+    "Analytics": {
+      title: "Actionable Analytics",
+      content: "Beyond traditional reporting, our analytics provide explainable insights that drive real action. We transform complex organizational data into clear, trustworthy intelligence that empowers leaders to make confident, data-driven decisions about talent and strategy."
+    },
+    "Collaboration": {
+      title: "Enhanced Collaboration",
+      content: "True collaboration happens when the right people connect at the right time. Our platform breaks down silos by intelligently matching expertise with opportunities, fostering cross-functional partnerships that drive innovation and organizational growth."
+    }
+  };
+
+  const openModal = (elementName) => {
+    setSelectedElement(elementName);
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+  };
+
+  const closeModal = () => {
+    setSelectedElement(null);
+    document.body.style.overflow = 'unset'; // Restore scrolling
+  };
+
+  // Close modal on ESC key press
+  useEffect(() => {
+    const handleEscKey = (event) => {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    if (selectedElement) {
+      document.addEventListener('keydown', handleEscKey);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscKey);
+    };
+  }, [selectedElement]);
   return (
     <div id="about-vision" className="about-vision-modern">
       <div className="container">
@@ -36,17 +84,45 @@ export const AboutVision = (props) => {
           </div>
           <div className="about-hero-visual">
             <div className="floating-elements">
-              <div className="float-element element-1">
+              <div
+                className="float-element element-1 float-element-clickable"
+                onClick={() => openModal("Innovation")}
+              >
                 <i className="fa fa-lightbulb-o"></i>
+                <p>Innovation</p>
+                <div className="float-expand-hint">
+                  <i className="fa fa-expand"></i>
+                </div>
               </div>
-              <div className="float-element element-2">
+              <div
+                className="float-element element-2 float-element-clickable"
+                onClick={() => openModal("Architecture")}
+              >
                 <i className="fa fa-sitemap"></i>
+                <p>Architecture</p>
+                <div className="float-expand-hint">
+                  <i className="fa fa-expand"></i>
+                </div>
               </div>
-              <div className="float-element element-3">
+              <div
+                className="float-element element-3 float-element-clickable"
+                onClick={() => openModal("Analytics")}
+              >
                 <i className="fa fa-line-chart"></i>
+                <p>Analytics</p>
+                <div className="float-expand-hint">
+                  <i className="fa fa-expand"></i>
+                </div>
               </div>
-              <div className="float-element element-4">
+              <div
+                className="float-element element-4 float-element-clickable"
+                onClick={() => openModal("Collaboration")}
+              >
                 <i className="fa fa-users"></i>
+                <p>Collaboration</p>
+                <div className="float-expand-hint">
+                  <i className="fa fa-expand"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -107,6 +183,23 @@ export const AboutVision = (props) => {
         </div>
         */}
       </div>
+
+      {/* Modal */}
+      {selectedElement && (
+        <div className="vision-modal-overlay" onClick={closeModal}>
+          <div className="vision-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="vision-modal-close" onClick={closeModal}>
+              <i className="fa fa-times"></i>
+            </button>
+            <div className="vision-modal-header">
+              <h3>{elementDetails[selectedElement]?.title}</h3>
+            </div>
+            <div className="vision-modal-body">
+              <p>{elementDetails[selectedElement]?.content}</p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -8,10 +8,14 @@
   #services,
   #testimonials,
   #team,
-  #header,
   #contact,
   #footer {
     width: 111%;
+  }
+
+  #header {
+    width: 100%;
+    overflow-x: hidden;
   }
 
   #portfolio {
