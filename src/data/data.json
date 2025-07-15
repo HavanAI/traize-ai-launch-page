@@ -43,11 +43,6 @@
 
   "Team": [
     {
-      "img": "img/team/raphabw.jpeg",
-      "name": "Raphael Sauer",
-      "job": "Business Development & Co-Founder",
-      "description": "Raphael leads Traize's business strategy and partnerships. Drawing on a background in consulting and an MSc in Organization & Innovation from Copenhagen, he expertly bridges our advanced research with market needs. He focuses on strategic relationships with key partners and scaling our go-to-market initiatives, ensuring Traize's solutions deliver value to enterprises."  },
-    {
       "img": "img/team/lukas.jpeg",
       "name": "Lukas Bierling",
       "job": "Research & Co-Founder",
@@ -62,7 +57,13 @@
       "name": "Theo Rabe",
       "job": "Product Design & Co-Founder",
       "description": "Theo is Traize's creative mind, shaping our user experience and product design. Drawing on his experience in the creative field, he specializes in transforming complex systems into intuitive interfaces. His work ensures our powerful backend capabilities translate into truly delightful and effortless user experiences."
-    }
+    },
+     {
+      "img": "img/team/raphabw.jpeg",
+      "name": "Raphael Sauer",
+      "job": "Business Development & Co-Founder",
+      "description": "Raphael leads Traize's business strategy and partnerships. Drawing on a background in consulting and an MSc in Organization & Innovation from Copenhagen, he expertly bridges our advanced research with market needs. He focuses on strategic relationships with key partners and scaling our go-to-market initiatives, ensuring Traize's solutions deliver value to enterprises."  }
+  
   ],
   "Contact": {
     "address": "Munich, Germany",
