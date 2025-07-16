@@ -211,7 +211,8 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2025 TRAIZE.ai <br /> All rights reserved.
+            &copy; 2025 TRAIZE.ai <br /> All rights reserved.<br />
+            <a href="/impressum.html" target="_blank" rel="noopener noreferrer">Impressum</a>
           </p>
         </div>
       </div>
